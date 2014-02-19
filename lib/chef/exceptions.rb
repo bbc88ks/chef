@@ -83,6 +83,7 @@ class Chef
 
     # Can't find a Resource of this type that is valid on this platform.
     class NoSuchResourceType < NameError; end
+    class UnsupportedPlatform < RuntimeError; end
 
     class InvalidResourceSpecification < ArgumentError; end
     class SolrConnectionError < RuntimeError; end
